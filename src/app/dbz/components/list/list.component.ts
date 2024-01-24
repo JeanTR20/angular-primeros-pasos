@@ -14,7 +14,7 @@ export class ListComponent {
   }]
 
   @Output()
-  onDelete: EventEmitter<string> = new EventEmitter();
+  public onDelete: EventEmitter<string> = new EventEmitter();
 
 
   onDeleteCharacter(id? : string ):void{
