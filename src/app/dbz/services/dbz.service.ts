@@ -25,7 +25,7 @@ export class DbzService {
 
   addCharacter(character: Character): void {
     const newCharacter: Character = {id: uuid(), ...character}
-    this.characters.push(character);
+    this.characters.push(newCharacter);
   }
 
   // onDeleteCharacter(index: number) {
